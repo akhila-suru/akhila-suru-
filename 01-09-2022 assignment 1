@@ -1,0 +1,25 @@
+#include <stdio.h>
+int isEven(int num)
+{
+    if(num%2==0)
+    return 1;
+    else
+    return 0;
+}
+
+
+int main()
+{
+    int num,a;
+    scanf("%d", &num);
+    a=isEven(num);
+    if(a==1)
+    {
+        printf("even");
+    }
+if(a==0)
+    {
+        printf("odd");
+    }
+    return 0;
+}
