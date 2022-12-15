@@ -1,0 +1,15 @@
+l=[]
+k=[]
+b=[]
+p=int(input("enter your size:"))
+for i in range(p):
+    x=int(input())
+    l.append(x)
+print(l)   
+for j in range(p):
+    if l[j]>0:
+        k.append(l[j])
+    else:
+        b.append(l[j])
+s=k+b
+print(s)
