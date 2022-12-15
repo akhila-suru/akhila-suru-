@@ -1,0 +1,17 @@
+l=[]
+p=int(input("enter your size:"))
+k=int(input("enter your target number:"))
+check=0
+for i in range(p):
+    x=int(input())
+    l.append(x)
+
+for i in range(p):
+    for j in range(i+1,p):
+        if abs(l[i]-l[j])==k:
+            check=1
+            break
+if check>0:
+    print("yes found")
+else:
+    print("not")
